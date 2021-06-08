@@ -1,0 +1,12 @@
+{
+    "name": "hexlet/code",
+    "description": "demo-projetc-lvl1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John An",
+            "email": "demo@exmaple.com"
+        }
+    ],
+    "require": {}
+}
