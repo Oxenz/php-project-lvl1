@@ -8,5 +8,8 @@
             "email": "demo@exmaple.com"
         }
     ],
+    "bin": [
+        "bin/brain-games"
+    ],
     "require": {}
 }
