@@ -1,6 +1,8 @@
 #!/usr/bin/env php
 <?php
 
-$greeting = "Welcome to the Brain Games!";
+use Php\Project\Lvl1\Cli;
 
-echo $greeting;
+require_once __DIR__ . '/../vendor/autoload.php';
+
+Cli\greeting();
