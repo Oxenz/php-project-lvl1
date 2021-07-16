@@ -15,14 +15,14 @@ function parityCheck()
         $rndNumber = rand(1, 15);
         $isEven = $rndNumber % 2 === 0;
         line("Question: {$rndNumber}");
-        $responsePlayer = prompt('Your answer: ');
+        $response = prompt('Your answer: ');
 
-        if ($isEven === true && $responsePlayer === 'yes') {
+        if ($isEven === true && $response === 'yes') {
             line('Correct!');
-        } elseif ($isEven === false && $responsePlayer === 'no') {
+        } elseif ($isEven === false && $response === 'no') {
             line('Correct!');
         } else {
-            line("'{$responsePlayer}' is wrong answer ;(. Correct answer was " . ($responsePlayer === "yes" ? "'no'" : "'yes'"));
+            line("'{$response}' is wrong answer ;(. Correct answer was " . ($response === "yes" ? "'no'" : "'yes'"));
             line("Let's try again, {$nickname}");
             return false;
         }
