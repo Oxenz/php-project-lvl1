@@ -2,10 +2,10 @@
 
 namespace Php\Project\Lvl1\Games\Gcd;
 
+use Php\Project\Lvl1\Engine;
+
 use function cli\line;
 use function cli\prompt;
-
-use Php\Project\Lvl1\Engine;
 
 use const Php\Project\Lvl1\Engine\NUMBER_ROUNDS;
 
@@ -15,8 +15,8 @@ function maxDivisor()
     line('Find the greatest common divisor of given numbers.');
 
     for ($i = 0; $i < NUMBER_ROUNDS; $i++) {
-        $genRndNumFirst = 100;
-        $genRndNumSecond = 52;
+        $genRndNumFirst = rand(1, 100);
+        $genRndNumSecond = rand(1, 100);
         $mathResult = Engine\generatorMaxDivisor($genRndNumFirst, $genRndNumSecond);
 
         line("Question: $genRndNumFirst $genRndNumSecond");

@@ -50,9 +50,11 @@ function generatorMaxDivisor($number1, $number2)
     $max = max($number1, $number2);
     $min = min($number1, $number2);
 
-    for ($i = $min; $i > 0; $i--) {
-        $result = $max % $i;
-        if ($result === 0) {
+    for ($i = $min; 0 < $i; $i--) {
+        $resultMaxNumber = $max % $i;
+        $resultMinNumber = $min % $i;
+
+        if ($resultMaxNumber === 0 && $resultMinNumber === 0) {
             return $i;
         }
     }
