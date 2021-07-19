@@ -24,7 +24,7 @@ function calculator()
         $response = (int) prompt('Your answer: ');
 
         if ($mathResult === $response) {
-            line("Correct! WP");
+            line("Correct!");
         } else {
             line("$response is wrong answer ;(. Correct answer was '$mathResult'");
             line("Let's try again, $nickname!");
