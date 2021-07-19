@@ -21,7 +21,7 @@ function generatorRndSymbols()
     $minus = "–";
     $multi = "*";
 
-    $randomNum = rand(1,3);
+    $randomNum = rand(1, 3);
 
     switch ($randomNum) {
         case 1:
@@ -31,7 +31,6 @@ function generatorRndSymbols()
         case 3:
             return $multi;
     }
-
 }
 
 function generatorRndMathOperations($startNumber, $operator, $endNumber)
