@@ -1,17 +1,17 @@
 <?php
 
-namespace Php\Project\Lvl1\Even;
+namespace Php\Project\Lvl1\Games\Even;
 
 use function cli\line;
 use function cli\prompt;
+use const Php\Project\Lvl1\Engine\NUMBER_ROUNDS;
 
 function parityCheck()
 {
-    $nickname = \Php\Project\Lvl1\Cli\greeting();
+    $nickname = \Php\Project\Lvl1\Games\Cli\greeting();
     line('Answer "yes" if the number even, otherwise answer "no".');
 
-
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < NUMBER_ROUNDS; $i++) {
         $rndNumber = rand(1, 15);
         $isEven = $rndNumber % 2 === 0;
         line("Question: {$rndNumber}");

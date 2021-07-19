@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-use Php\Project\Lvl1\Cli;
+use Php\Project\Lvl1\Games\Cli;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 

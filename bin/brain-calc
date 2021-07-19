@@ -1,8 +1,8 @@
 #!/usr/bin/env php
 <?php
 
-use Php\Project\Lvl1\Games\Even;
+use Php\Project\Lvl1\Games\Calc;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-Even\parityCheck();
+Calc\calculator();
