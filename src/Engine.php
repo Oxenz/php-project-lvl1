@@ -59,3 +59,23 @@ function generatorMaxDivisor($number1, $number2)
         }
     }
 }
+
+function generatorProgression()
+{
+    $lengthNumbers = rand(4, 10);
+    $hiddenSymbol = rand(1, $lengthNumbers);
+    $stepProgression = rand(1, 10);
+    $arrNumbers = [$lengthNumbers];
+
+    for ($i = $lengthNumbers, $index = 0; $i > 0; $i--) {
+        $arrNumbers[] = $arrNumbers[$index++] + $stepProgression;
+    }
+
+    $saveHiddenSymbol = $arrNumbers[$hiddenSymbol];
+    $arrNumbers[$hiddenSymbol] = "..";
+    $arrToStr = implode(" ", $arrNumbers);
+    return [
+        'arrayNum' => $arrToStr,
+        'hiddenSym' => $saveHiddenSymbol,
+        ];
+}
