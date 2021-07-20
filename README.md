@@ -9,3 +9,5 @@
 [![asciicast](https://asciinema.org/a/nV3AcfH5Qoy3hu6vAmXzrE3YY.svg)](https://asciinema.org/a/nV3AcfH5Qoy3hu6vAmXzrE3YY)
 #### Step7 — `make brain-gcd`
 [![asciicast](https://asciinema.org/a/MGIHbmdhHHULcKo6Il644e0Uz.svg)](https://asciinema.org/a/MGIHbmdhHHULcKo6Il644e0Uz)
+#### Step8 — `make brain-progression`
+[![asciicast](https://asciinema.org/a/dlwviG0jxoKYhrK1obDPSBrFw.svg)](https://asciinema.org/a/dlwviG0jxoKYhrK1obDPSBrFw)
