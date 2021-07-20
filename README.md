@@ -7,3 +7,5 @@
 [![asciicast](https://asciinema.org/a/fos8ykrTx7v0FGwcqQA0SzTle.svg)](https://asciinema.org/a/fos8ykrTx7v0FGwcqQA0SzTle)
 #### Step6 — `make brain-calc`
 [![asciicast](https://asciinema.org/a/nV3AcfH5Qoy3hu6vAmXzrE3YY.svg)](https://asciinema.org/a/nV3AcfH5Qoy3hu6vAmXzrE3YY)
+#### Step7 — `make brain-gcd`
+[![asciicast](https://asciinema.org/a/MGIHbmdhHHULcKo6Il644e0Uz.svg)](https://asciinema.org/a/MGIHbmdhHHULcKo6Il644e0Uz)
