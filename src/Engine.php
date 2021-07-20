@@ -6,6 +6,8 @@ use function cli\line;
 use function cli\prompt;
 
 const NUMBER_ROUNDS = 3;
+const YES = "yes";
+const NO = "no";
 
 function greeting()
 {
@@ -78,4 +80,27 @@ function generatorProgression()
         'arrayNum' => $arrToStr,
         'hiddenSym' => $saveHiddenSymbol,
         ];
+}
+
+function generatorPrimeNumbers()
+{
+    $divider = rand(1, 100);
+    $result = true;
+
+    for ($i = $divider - 1; $i > 1; $i--) {
+        $res = $divider % $i === 0;
+
+        if ($res) {
+            $result = false;
+            return [
+                "divider" => $divider,
+                "isPrime" => $result,
+            ];
+        }
+    }
+
+    return [
+        "divider" => $divider,
+        "isPrime" => $result,
+    ];
 }

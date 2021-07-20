@@ -6,6 +6,8 @@ use function cli\line;
 use function cli\prompt;
 
 use const Php\Project\Lvl1\Engine\NUMBER_ROUNDS;
+use const Php\Project\Lvl1\Engine\YES;
+use const Php\Project\Lvl1\Engine\NO;
 
 function parityCheck()
 {
@@ -18,9 +20,9 @@ function parityCheck()
         line("Question: {$rndNumber}");
         $response = prompt('Your answer: ');
 
-        if ($isEven === true && $response === 'yes') {
+        if ($isEven === true && $response === YES) {
             line('Correct!');
-        } elseif ($isEven === false && $response === 'no') {
+        } elseif ($isEven === false && $response === NO) {
             line('Correct!');
         } else {
             line("'{$response}' is wrong answer ;(. Correct answer was " . ($response === "yes" ? "'no'" : "'yes'"));
