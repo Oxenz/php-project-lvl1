@@ -11,3 +11,5 @@
 [![asciicast](https://asciinema.org/a/MGIHbmdhHHULcKo6Il644e0Uz.svg)](https://asciinema.org/a/MGIHbmdhHHULcKo6Il644e0Uz)
 #### Step8 — `make brain-progression`
 [![asciicast](https://asciinema.org/a/dlwviG0jxoKYhrK1obDPSBrFw.svg)](https://asciinema.org/a/dlwviG0jxoKYhrK1obDPSBrFw)
+#### Step9 — `make brain-prime`
+[![asciicast](https://asciinema.org/a/1e7ON8DioyHQFOxaXl3Vx7ZsR.svg)](https://asciinema.org/a/1e7ON8DioyHQFOxaXl3Vx7ZsR)
