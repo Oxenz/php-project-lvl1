@@ -9,7 +9,7 @@ use function cli\prompt;
 
 use const Php\Project\Lvl1\Engine\NUMBER_ROUNDS;
 
-function progression()
+function progression(): void
 {
     $nickname = Engine\greeting();
     line('What number is missing in the progression?');
@@ -24,7 +24,7 @@ function progression()
         } else {
             line("$response is wrong answer ;(. Correct answer was '{$resultProgression['hiddenSym']}'");
             line("Let's try again, $nickname!");
-            return false;
+            return;
         }
     }
 

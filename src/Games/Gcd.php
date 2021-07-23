@@ -9,7 +9,7 @@ use function cli\prompt;
 
 use const Php\Project\Lvl1\Engine\NUMBER_ROUNDS;
 
-function maxDivisor()
+function maxDivisor(): void
 {
     $nickname = Engine\greeting();
     line('Find the greatest common divisor of given numbers.');
@@ -27,7 +27,7 @@ function maxDivisor()
         } else {
             line("$response is wrong answer ;(. Correct answer was '$mathResult'");
             line("Let's try again, $nickname!");
-            return false;
+            return;
         }
     }
 

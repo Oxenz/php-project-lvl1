@@ -9,7 +9,7 @@ use function cli\prompt;
 
 use const Php\Project\Lvl1\Engine\NUMBER_ROUNDS;
 
-function calculator()
+function calculator(): void
 {
     $nickname = Engine\greeting();
     line('What is the result of the expression?');
@@ -28,7 +28,7 @@ function calculator()
         } else {
             line("'{$response}' is wrong answer ;(. Correct answer was '{$mathResult}'");
             line("Let's try again, $nickname!");
-            return false;
+            return;
         }
     }
 

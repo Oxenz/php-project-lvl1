@@ -9,7 +9,7 @@ const NUMBER_ROUNDS = 3;
 const YES = "yes";
 const NO = "no";
 
-function greeting()
+function greeting(): string
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -17,7 +17,7 @@ function greeting()
     return $name;
 }
 
-function generatorRndSymbols()
+function generatorRndSymbols(): string
 {
     $plus = "+";
     $minus = "-";
@@ -35,7 +35,7 @@ function generatorRndSymbols()
     }
 }
 
-function generatorRndMathOperations($startNumber, $operator, $endNumber)
+function generatorRndMathOperations(int $startNumber, string $operator, int $endNumber): int
 {
     switch ($operator) {
         case ("+"):
@@ -47,7 +47,7 @@ function generatorRndMathOperations($startNumber, $operator, $endNumber)
     }
 }
 
-function generatorMaxDivisor($number1, $number2)
+function generatorMaxDivisor(int $number1, int $number2): int
 {
     $max = max($number1, $number2);
     $min = min($number1, $number2);
@@ -62,7 +62,7 @@ function generatorMaxDivisor($number1, $number2)
     }
 }
 
-function generatorProgression()
+function generatorProgression(): array
 {
     $lengthNumbers = rand(4, 10);
     $hiddenSymbol = rand(1, $lengthNumbers);
@@ -82,7 +82,7 @@ function generatorProgression()
         ];
 }
 
-function generatorPrimeNumbers()
+function generatorPrimeNumbers(): array
 {
     $divider = rand(1, 100);
     $result = true;

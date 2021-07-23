@@ -9,7 +9,7 @@ use const Php\Project\Lvl1\Engine\NUMBER_ROUNDS;
 use const Php\Project\Lvl1\Engine\YES;
 use const Php\Project\Lvl1\Engine\NO;
 
-function parityCheck()
+function parityCheck(): void
 {
     $nickname = \Php\Project\Lvl1\Games\Cli\greeting();
     line('Answer "yes" if the number even, otherwise answer "no".');
@@ -27,7 +27,7 @@ function parityCheck()
         } else {
             line("'{$response}' is wrong answer ;(. Correct answer was " . ($response === "yes" ? "'no'" : "'yes'"));
             line("Let's try again, {$nickname}!");
-            return false;
+            return;
         }
     }
 
