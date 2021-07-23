@@ -22,7 +22,6 @@ function generatorRndSymbols(): string
     $plus = "+";
     $minus = "-";
     $multi = "*";
-    $result = null;
 
     $randomNum = rand(1, 3);
 
@@ -43,8 +42,6 @@ function generatorRndSymbols(): string
 
 function generatorRndMathOperations(int $startNumber, string $operator, int $endNumber): int
 {
-    $result = null;
-
     switch ($operator) {
         case ("+"):
             $result = $startNumber + $endNumber;
@@ -64,7 +61,6 @@ function generatorMaxDivisor(int $number1, int $number2): int
 {
     $max = max($number1, $number2);
     $min = min($number1, $number2);
-    $result = null;
 
     for ($i = $min; 0 < $i; $i--) {
         $resultMaxNumber = $max % $i;
