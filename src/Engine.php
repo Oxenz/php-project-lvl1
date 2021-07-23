@@ -40,7 +40,7 @@ function generatorRndMathOperations($startNumber, $operator, $endNumber)
     switch ($operator) {
         case ("+"):
             return $startNumber + $endNumber;
-        case ("–"):
+        case ("-"):
             return $startNumber - $endNumber;
         case ("*"):
             return $startNumber * $endNumber;

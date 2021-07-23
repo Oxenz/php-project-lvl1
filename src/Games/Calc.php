@@ -21,7 +21,7 @@ function calculator()
         $mathResult = Engine\generatorRndMathOperations($genRndNumFirst, $genRndSymbols, $genRndNumSecond);
 
         line("Question: $genRndNumFirst $genRndSymbols $genRndNumSecond");
-        $response = (int) prompt('Your answer: ');
+        $response = (int) prompt('Your answer');
 
         if ($mathResult === $response) {
             line("Correct!");
