@@ -20,7 +20,7 @@ function greeting()
 function generatorRndSymbols()
 {
     $plus = "+";
-    $minus = "–";
+    $minus = "-";
     $multi = "*";
 
     $randomNum = rand(1, 3);

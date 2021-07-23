@@ -26,7 +26,7 @@ function calculator()
         if ($mathResult === $response) {
             line("Correct!");
         } else {
-            line("$response is wrong answer ;(. Correct answer was '$mathResult'");
+            line("'{$response}' is wrong answer ;(. Correct answer was '{$mathResult}'");
             line("Let's try again, $nickname!");
             return false;
         }
