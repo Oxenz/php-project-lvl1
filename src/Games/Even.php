@@ -18,7 +18,7 @@ function parityCheck()
         $rndNumber = rand(1, 15);
         $isEven = $rndNumber % 2 === 0;
         line("Question: {$rndNumber}");
-        $response = prompt('Your answer: ');
+        $response = prompt('Your answer');
 
         if ($isEven === true && $response === YES) {
             line('Correct!');
@@ -26,7 +26,7 @@ function parityCheck()
             line('Correct!');
         } else {
             line("'{$response}' is wrong answer ;(. Correct answer was " . ($response === "yes" ? "'no'" : "'yes'"));
-            line("Let's try again, {$nickname}");
+            line("Let's try again, {$nickname}!");
             return false;
         }
     }
