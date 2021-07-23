@@ -22,44 +22,61 @@ function generatorRndSymbols(): string
     $plus = "+";
     $minus = "-";
     $multi = "*";
+    $result = null;
 
     $randomNum = rand(1, 3);
 
     switch ($randomNum) {
         case 1:
-            return $plus;
+            $result = $plus;
+            break;
         case 2:
-            return $minus;
+            $result = $minus;
+            break;
         case 3:
-            return $multi;
+            $result = $multi;
+            break;
     }
+
+    return $result;
 }
 
 function generatorRndMathOperations(int $startNumber, string $operator, int $endNumber): int
 {
+    $result = null;
+
     switch ($operator) {
         case ("+"):
-            return $startNumber + $endNumber;
+            $result = $startNumber + $endNumber;
+            break;
         case ("-"):
-            return $startNumber - $endNumber;
+            $result = $startNumber - $endNumber;
+            break;
         case ("*"):
-            return $startNumber * $endNumber;
+            $result = $startNumber * $endNumber;
+            break;
     }
+
+    return $result;
 }
 
 function generatorMaxDivisor(int $number1, int $number2): int
 {
     $max = max($number1, $number2);
     $min = min($number1, $number2);
+    $result = null;
 
     for ($i = $min; 0 < $i; $i--) {
         $resultMaxNumber = $max % $i;
         $resultMinNumber = $min % $i;
 
         if ($resultMaxNumber === 0 && $resultMinNumber === 0) {
-            return $i;
+            $result = $i;
+            break;
         }
     }
+
+    return $result;
 }
 
 function generatorProgression(): array
